@@ -1,7 +1,7 @@
 import os
 import telebot
 
-API_KEY = os.getenv('API_KEY')
+API_KEY = 5311430435:AAF8GYCpqUiw1BeDFe91mluYkHRXFagCkoU
 bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['mewtwo'])
@@ -12,13 +12,25 @@ def charizard(message):
 def charmander(message):
   bot.reply_to(message, "Best - Timid, modest")
 
+@bot.message_handler(commands=['tyranitar'])
+def charmander(message):
+  bot.reply_to(message, "Best - Adamant, brave")
+
+@bot.message_handler(commands=['sharpedo'])
+def charmander(message):
+  bot.reply_to(message, "Best - Jolly, adamant")
+
 @bot.message_handler(commands=['start'])
 def fp(message):
-  bot.reply_to(message, "Hello there, \nThis is Nature Bot. \nThis bot contains Best natures of Important Legendary and Non-Legendary Pokemon. \nFor example Deoxys has 4 forms so use \n/deoxys - This will give data about all forms of deoxys. \nPlease note that all commands start with small letter. \nThis bot has only some pokemon ")
+  bot.reply_to(message, "Hello there, \nThis is Nature Bot. \nThis bot contains Best natures of Important Legendary and Non-Legendary Pokemon. \nFor example Deoxys has 4 forms so use \n/deoxys - This will give data about all forms of deoxys. \nPlease note that all commands start with small letter. \nThis bot has only some pokemon \n always use the full evolved pokemon name")
 
 @bot.message_handler(commands=['articuno'])
 def charmeleon(message):
   bot.reply_to(message, "Best - Careful")
+
+@bot.message_handler(commands=['tapu'])
+def charmeleon(message):
+  bot.reply_to(message, "Best Koko - Jolly, naive, adamant \nFor Bulu- Adamant, impish \nFor Lele- Timid, modest \nFor Fini- Modest, calm, bold")
 
 @bot.message_handler(commands=['error'])
 def charmeleon(message):
@@ -66,7 +78,7 @@ def fp(message):
 
 @bot.message_handler(commands=['entei'])
 def fp(message):
-  bot.reply_to(message, "Best- Adamant")
+  bot.reply_to(message, "Best- Adamant, careful, jolly, impish")
 
 @bot.message_handler(commands=['suicune'])
 def fp(message):
@@ -86,7 +98,15 @@ def fp(message):
 
 @bot.message_handler(commands=['rayquaza'])
 def fp(message):
+  bot.reply_to(message, "Best- Adamant, jolly")
+
+@bot.message_handler(commands=['mamoswine'])
+def fp(message):
   bot.reply_to(message, "Best- Adamant")
+
+@bot.message_handler(commands=['melloetta'])
+def fp(message):
+  bot.reply_to(message, "Best Normal- Modest, calm \nFor Pirouette form - Jolly, hasty, naive, adamant")
 
 @bot.message_handler(commands=['deoxys'])
 def fp(message):
@@ -115,6 +135,18 @@ def fp(message):
 @bot.message_handler(commands=['arceus'])
 def fp(message):
   bot.reply_to(message, "Best- Modest, timid")
+
+@bot.message_handler(commands=['guzzlord'])
+def fp(message):
+  bot.reply_to(message, "Best- Adamant")
+
+@bot.message_handler(commands=['buzzwole'])
+def fp(message):
+  bot.reply_to(message, "Best- Adamant, impish")
+
+@bot.message_handler(commands=['kommoo'])
+def fp(message):
+  bot.reply_to(message, "Best- Adamant, impish, careful, jolly")
 
 @bot.message_handler(commands=['dialga'])
 def fp(message):
@@ -186,7 +218,7 @@ def fp(message):
 
 @bot.message_handler(commands=['lunala'])
 def fp(message):
-  bot.reply_to(message, "Best- modest")
+  bot.reply_to(message, "Best- Modest, timid")
 
 @bot.message_handler(commands=['zeraora'])
 def fp(message):
